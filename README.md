@@ -16,7 +16,7 @@
 - css framework (NOT Bootstrap)... maybe Tailwind CSS?
 - accepts and responds to user input
 
-## For PowerPoint presentation only: 
+## For PowerPoint Presentation Only: 
 (every person needs to speak)
 
 Concept: 
