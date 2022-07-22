@@ -1,11 +1,11 @@
-# Motion-Picture-Finder
+# Show finder
 
 ## Description 
 
 ## Technologies Used
 
 ## Screenshot
-![MotionPictureFinder]()
+![ShowFinder]()
 
 ## Deployed Application Link: 
 
