@@ -4,32 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Motion Picture Finder</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Bulma css frame works -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Show Finder</title>
   </head>
+
+
   <body>
-    <div id="main" class="container-1">
-        <div style="padding-top: 10rem;">
-        <h1 class="center-align title">Motion Picure Finder</h1>
+    <section class="hero is-fullheight">
+      <!-- main container -->
+      <div class="hero-body">
+        <!-- greeting and search box -->
+        <div class="container has-text-centered">
+          <div>
+            <h1>Welcome to Show Finder!</h1>
+            <p>Simply search your show title below to find out where you can stream it.</p>
+            <p id="disclaimer">Valid in the U.S. only. Some restrictions may apply.</p>
+            <div class="control">
+              <input class="input is-focused" type="text" placeholder="Enter show title here..." id="searchInput">
+            </div>
+            <button id="searchBtn" class="button button is-dark" class="js-modal-trigger" data-target="blankTitle">Search</button>
+            <button id="clearBtn" class="button button is-dark">Clear History</button>
+          </div>
+          <!-- search history buttons append here -->
+          <div id="searchHistory"></div>
+          <!-- search results append here -->
+          <div id="searchResults"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- hidden modal; empty search input -->
+    <div id="blankTitle" class="modal">
+      <div class="modal-background"></div>
+        <div class="modal-content" id="customModal">
+          <div class="box">
+            <p>Show Title cannot be blank.</p>
+          </div>
+        </div>
+        <button id="closeBlank" class="modal-close is-large" aria-label="close"></button>
     </div>
-    <div class="row" style="margin-top: 12rem;margin-bottom: 12rem">
-        <div class="col s12 m3"></div>
-        <div class="col s12 m6">
-            <div class="input-field center-align " style="width: 100%;"></div>
-            <input id="search" type="text" style="background-color: rgba(255, 235, 204,.7);">
-            <label for="search" class="active">Search</label>
-            <button id="searchButton" class=" btn waves-effect blue-grey darken-1" type="submit" name="action">Submit</button>
-            <div class="search-results"></div>
-      </div>      
-    </div>
-    <div class="col s12 m3"></div>
-     
-    </div>
-    <div class="row">
-        <div id="Movies-TvShows"> </div>
-        
-    </div>
-    </div>    
+
+       <!--hidden modal; input not found --> -->
+      <div id="notFound" class="modal">
+        <div class="modal-background"></div>
+          <div class="modal-content" id="customModal">
+            <div class="box">
+              <p>Title not found. Please try again.</p>
+            </div>
+          </div>
+          <button id="closeBlank" class="modal-close is-large" aria-label="close"></button>
+      </div>
+      <!-- jquery, js -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="./Assets/JS/script.js"></script>
   </body>
-  
 </html>
