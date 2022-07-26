@@ -2,52 +2,22 @@
 
 ## Description 
 
+Show Finder will display the TV show title, a picture of the show, and the streaming services’ logo where the show is available. All that you need to do is type in your desired show title and hit search. When you click on a logo, the site will direct you to your show on the chosen site. Logo icons linked to websites with more information on the show are also available. Show Finder will also create a search history, so you can refer to the streaming location of titles you have searched before.
+
+
 ## Technologies Used
+
+- HTML/CSS
+- JavaScript
+- Local storage
+- Bulma CSS Framework
+- Utelly API: gets information from services like Netflix, Amazon Prime Video, iTunes, Apple TV+, etc.
+- MDB API: 
+- Slack & Zoom for communications
 
 ## Screenshot
 ![MotionPictureFinder]()
 
 ## Deployed Application Link: 
+https://srandall1213.github.io/Show-Finder/
 
-## Criteria: 
-- Two APIs:
-    - Utelly
-    - MDB
-- Client-side storage to store persistent data:
-    - via search history buttons
-- No alerts/prompts/confirms
-- CSS framework (NOT Bootstrap):
-    - Bulma
-- Accepts and responds to user input:
-    - via search input 
-    - js will create and append search results
-
-## For PowerPoint presentation only: 
-(every person needs to speak)
-
-Concept: 
-- Description (one minute):
-    - Have you ever watched the whole season of a show on Netflix, Amazon Prime, Hulu, etc. and then found out later that there was a new season streaming on a different service? Never fear! Stay up-to-date on all the seasons of your favorite shows with Show Finder. Show Finder is a website that will help you find where to watch the new release of the season you have been dying to watch. Type in your show, and with a click, our site will tell you all you need to know about where to watch it next.
-- Motivation for development:
-    - Get experience coding as a team and implementing what we learned so far in the University of Utah Bootcamp.
-- User story:
-    - AS A television show enthusiast 
-    - I WANT to see which streaming service has the new season of one of my shows
-    - SO THAT I can watch it as soon as possible
-
-Process: 
-- Technologies used: Bulma CSS framework, Utelly & MDB APIs
-- Breakdown of tasks and roles: 
-    - Sarah: Utelly API call
-    - Clayton: MDB API call
-    - Abel & Christian: HTML & CSS
-- Challenges: 
-- Successes:
-
--Demo-
-
-Directions for Future Development:
-
-Links: 
-- Deployed link: 
-- Github repo: https://github.com/srandall1213/Show-Finder
