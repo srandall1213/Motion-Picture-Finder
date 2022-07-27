@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+/* Background */
+.hero {
+    /* fallback color */
+    background-color: black;
+    background-image: url("streamingservicesblur.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Main Box */
+.container {
+    /* fallback color */
+    background-color: rgb(0,0,0); 
+    /* black w/opacity to see-through */
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    border: 3px solid #f1f1f1;
+}
+
+/* Main Box Search Content */
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    margin-bottom: -20px;
+}
+
+#disclaimer {
+    font-size: 15px;
+    margin-top: -40px;
+}
+
+.mQuote {
+    margin: -30px 50px 55px 50px;
+    padding: 10px;
+    font-size: 30px;
+    border: 1px solid white;
+}
+
+#searchInput {
+    width: 70%;
+    margin: -30px 20px 20px 20px;
+}
+
+#searchBtn, #clearBtn {
+    width: 33%;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(16, 16, 16, 0.899);
+    margin: 10px 8px 20px 8px;
+}
+
+/* Search History */
+#searchHistory {
+    margin: -10px 0px;
+}
+
+.historyBtn {
+    background-color: lightgray;
+    box-shadow: 0px 0px 10px 5px rgba(16, 16, 16, 0.899);
+    color: rgb(89, 89, 89);
+    border-radius: 5%;
+    border-style: none;
+    font-size: 20px;
+    word-wrap: break-word;
+    padding: 7px 11px;
+    margin: 10px;
+}
+
