@@ -36,11 +36,10 @@ h1 {
 
 #disclaimer {
     font-size: 15px;
-    margin-top: -40px;
 }
 
 .mQuote {
-    margin: -30px 50px 55px 50px;
+    margin: 10px 50px 55px 50px;
     padding: 10px;
     font-size: 30px;
     border: 1px solid white;
@@ -101,4 +100,36 @@ h2 {
     width: 100%;
 }
 
+.logo {
+    padding: 5px 15px;
+    margin-top: -15px;
+}
 
+.logo:hover {
+    cursor: pointer;
+    opacity: .5;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.logoResize {
+    height: 60px;
+    width: 90px;
+    padding: 5px 15px;
+    margin-top: -15px;
+}
+
+.logoResize:hover {
+    opacity: .5;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+/* Modal Customization */
+#customModal {
+    text-align: center;
+}
