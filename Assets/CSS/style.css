@@ -76,3 +76,29 @@ h1 {
     margin: 10px;
 }
 
+.historyBtn:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* Search Results */
+#searchResults {
+    margin: 20px;
+}
+
+.card {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;   
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.resultImg {
+    width: 100%;
+}
+
+
