@@ -4,6 +4,9 @@ var clearBtn = document.querySelector("#clearBtn");
 var searchResultsEl = document.querySelector("#searchResults");
 var searchHistoryEl = document.querySelector("#searchHistory");
 
+//RUN MOVIE QUOTE API
+runMQ();
+
 //SEARCH EVENT
 searchBtn.addEventListener('click', function(event) {
     event.preventDefault();
@@ -209,3 +212,31 @@ clearBtn.addEventListener("click", function() {
     searchHistoryEl.innerHTML = "";
     searchResultsEl.innerHTML = '';
 })
+
+//MQ FETCH
+function runMQ() {
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'f62dfa844dmsh9edf5c494fd42acp10844cjsn5de935bebbcd',
+            'X-RapidAPI-Host': 'movie-and-tv-shows-quotes.p.rapidapi.com'
+        }
+    };
+    fetch('https://movie-and-tv-shows-quotes.p.rapidapi.com/quotes/random/quote', options)
+        .then(function (response) {
+        return response.json();
+        })
+        .then(function (data) {
+            console.log("MQ", data);
+            var movieQuoteEl=document.querySelector("#movieQuote");
+            var quote=data.quote;
+            movieQuoteEl.innerHTML='"' + quote + '"';
+
+            var mqInfoEl=document.querySelector("#mqInfo");
+            var actor=data.actor;
+            var character=data.character;
+            var title=data.quoteFrom;
+            var year=data.year;
+            mqInfoEl.innerHTML= "-" + actor + " as " + character + " in " + (title.italics()) + ", " + year;
+        })
+}        
