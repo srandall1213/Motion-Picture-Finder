@@ -4,6 +4,7 @@ var clearBtn = document.querySelector("#clearBtn");
 var searchResultsEl = document.querySelector("#searchResults");
 var searchHistoryEl = document.querySelector("#searchHistory");
 
+
 //RUN MOVIE QUOTE API
 runMQ();
 
@@ -165,7 +166,7 @@ function saveShows() {
         localStorage.setItem('Show Titles:', '[]');
     }
 
-    var showArray = JSON.parse(localStorage.getItem('Show Titles:'));
+    var showArray = JSON.parse(localStorage.getItem('Show Titles:'))||[];
     showArray.push(new_show);
 
     localStorage.setItem('Show Titles:', JSON.stringify(showArray));
@@ -173,7 +174,9 @@ function saveShows() {
 
 //CREATE SEARCH HISTORY BUTTONS
 function historyButtons () {
-    var showArray = JSON.parse(localStorage.getItem('Show Titles:'));
+
+    var showArray = JSON.parse(localStorage.getItem('Show Titles:'))||[];
+    console.log(showArray)
     searchHistoryEl.innerHTML = "";
       
     for (var i = 0; i < showArray.length; i++) {
@@ -183,8 +186,9 @@ function historyButtons () {
         historyBtn.innerHTML += searchedShow;
         searchHistoryEl.append(historyBtn); 
         renderResults();
+        console.log(showArray)
     }     
-
+    
     //RENDER SEARCH RESULTS ON CLICK
     function renderResults() {
         historyBtn.addEventListener("click", function(event) { 
@@ -209,8 +213,8 @@ function keepHistory () {
 //CLEAR SEARCH HISTORY
 clearBtn.addEventListener("click", function() {
     localStorage.clear();
-    searchHistoryEl.innerHTML = "";
-    searchResultsEl.innerHTML = '';
+    searchHistoryEl.innerText = '';
+    searchResultsEl.innerText = '';
 })
 
 //MQ FETCH
