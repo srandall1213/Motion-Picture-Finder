@@ -18,8 +18,7 @@ Show Finder will display the TV show title, a picture of the show, and the strea
 
 - Upgrade Utelly API from the Basic plan to the Pro plan to pull from more streaming services
 - Add pricing for each streaming service
-- Display more than one version of a show in the search results
-- Add season number as a parameter
+- Find a similar API that lets us use parameters e.g. season number
 
 ## Screenshot
 ![ShowFinder](./images/screenshot.png)
