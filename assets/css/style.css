@@ -127,6 +127,10 @@ h2 {
     transition: 1s ease;
 }
 
+.divider {
+    border-top: 1px solid black;
+}
+
 /* Modal Customization */
 #customModal {
     text-align: center;
